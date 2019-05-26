@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment</title>
+	<style type="text/css">
+		
+		body{
+		 /*
+			 background-image: url(./image.jpg);
+			 background-repeat: no-repeat;
+			 background-size:cover;*/
+			 background-color: #667eea;
+			 color:white;
+			 
+		}
+
+			.btn{
+			margin-top: 45px;
+			width: 90px;
+			border-radius: 13px;
+			cursor:pointer;
+			height: 35px;
+			position: relative;
+	
+		}
+		.btn:hover{
+			 color: grey;
+			 transform:scale(0.8,0.9);
+			 transition: all 0.5s;	
+	
+		}
+		#ip-text{
+
+			border-radius: 13px;
+			height: 28px;
+
+		}
+
+
+	</style>
+</head>
+
+
+
+<body>
+
+
+	<div align="center">
+		<div>
+			<header align = "center"> 
+				<h1>Cabify Customer Payment page</h1>
+			</header>
+		</div>
+
+		<h3 align = "center">Destination Price :- <span id="price"></span></h3>
+		<button class="btn" id = "m-pay">Make Payment</button>
+		<input type="number" name="pay-btn" id = "ip-text">
+		<button class="btn" id = "pay">Pay</button>
+		<h3 id = "p-status"></h3>
+		<h3  id = "percent"> Percentage :- 30%</h3>
+
+		<h3 id = "c-text">Company's commission :- <span id="c-money"></span></h3> 
+		<h3 id = "d-text">Drivers Money :- <span id="d-money"></span> </h3> 
+
+
+
+
+	</div>
+
+<script src = "./main.js"></script>
+</body>
+</html>
